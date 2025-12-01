@@ -1,20 +1,17 @@
 class Solution:
     def findKthPositive(self, arr: List[int], k: int) -> int:
-        seen = set(arr)
-        miss_count = 0
         current_number = 1
+        p =0
 
         while True:
-            if current_number not in seen:
-                miss_count +=1
-                if miss_count == k:
-                    return current_number
+            if current_number not in arr:
+                p +=1
+            if p == k:
+                return current_number
+                
             current_number +=1
-        return
-
-
         
 
 
-
-        
+            
+         

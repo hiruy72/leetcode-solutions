@@ -1,15 +1,18 @@
 class Solution:
     def smallerNumbersThanCurrent(self, nums: List[int]) -> List[int]:
+        hash = {}
+        num1=sorted(nums)
         result = []
-        
-        for i in range(len(nums)):
-            count = 0
-            for j in range(len(nums)):
-                if nums[i] > nums[j]:
-                    count +=1
-            result.append(count)
-                    
+
+        for i,num in enumerate(num1):
+            if num not in hash:
+                hash[num] = i
+        for j in nums:
+            result.append(hash[j])
         return result
+
+            
+            
 
 
 

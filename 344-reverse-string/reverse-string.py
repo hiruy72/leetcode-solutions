@@ -7,7 +7,9 @@ class Solution:
         right = len(s)-1
 
         while left < right:
-            s[left], s[right] = s[right] ,s[left]
+            x= s[left]
+            s[left] = s[right]
+            s[right]=x
             left +=1
             right -=1
         

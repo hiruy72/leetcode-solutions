@@ -6,7 +6,7 @@ class Solution:
 
         i = 1
 
-        # 1) strictly increasing
+        
         while i < n and nums[i] > nums[i - 1]:
             i += 1
         if i == 1 or i == n:

@@ -11,8 +11,6 @@ class Solution:
             result3[i]= int(result2[i])
         return result3
         
-        return nums
-        
         
         
 

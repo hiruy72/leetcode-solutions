@@ -4,6 +4,6 @@ class Solution:
         a= Counter(s)
         b= Counter(t)
 
-        return sum((a -b).values())
+        return sum((b -a).values())
 
         
